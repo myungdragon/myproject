@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES>
+          <SHORT-NAME>Diag</SHORT-NAME>
+          <ADMIN-DATA>
+            <DOC-REVISIONS>
+              <DOC-REVISION>
+                <REVISION-LABEL>4.2.0</REVISION-LABEL>
+                <ISSUED-BY>AUTOSAR</ISSUED-BY>
+                <DATE>2011-11-09</DATE>
+              </DOC-REVISION>
+              <DOC-REVISION>
+                <REVISION-LABEL>1.0.0</REVISION-LABEL>
+                <REVISION-LABEL-P-1>4.2.0</REVISION-LABEL-P-1>
+                <ISSUED-BY>AUTRON</ISSUED-BY>
+                <DATE>2013-01-25</DATE>
+              </DOC-REVISION>
+              <DOC-REVISION>
+                <REVISION-LABEL>1.1.2</REVISION-LABEL>
+                <REVISION-LABEL-P-1>4.2.0</REVISION-LABEL-P-1>
+                <ISSUED-BY>AUTRON</ISSUED-BY>
+                <DATE>2014-08-22</DATE>
+              </DOC-REVISION>
+            </DOC-REVISIONS>
+          </ADMIN-DATA>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTRON/TestCase_Diag</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/Bsw_NvM/BswImplementation_NvM</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="f7fdad9d-db42-42ac-a1ab-d7c61fbd2117">
+              <SHORT-NAME>Diag_TestSeq0</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:51:41Z" GID="TimeDelay">500</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x10</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x50</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>To Check change session based on input(0x03, Extended Sesstion)</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="7270e9b4-a32a-45c0-8d00-766db16a194e">
+              <SHORT-NAME>Diag_TestSeq1</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:51:43Z" GID="TimeDelay">500</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0x01</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x10</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x50</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x01</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>To Check change session based on input(0x01, Default Sesstion)</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="f7fdad9d-db42-42ac-a1ab-d7c61fbd2117">
+              <SHORT-NAME>Diag_TestSeq2</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:51:46Z" GID="TimeDelay">500</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x10</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x50</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>To Check change session based on input(0x03, Extended Sesstion)</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="68e25a6a-9add-482c-ada9-1ebc7c944e3e">
+              <SHORT-NAME>Diag_TestSeq3</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:12:38Z" GID="SubFunction" />
+                    <SD T="2018-11-23T12:12:51Z" GID="data">0xf1,0x90</SD>
+                    <SD T="2018-11-23T12:20:53Z" GID="ExpectedResult">0x62,0xf1,0x90,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0a,0x0b,0x0c,0x0d,0x0e,0x0f,0x10,0x11</SD>
+                    <SD T="2018-11-23T12:25:15Z" GID="TestInformation">ReadDataById Test (+ Diag TP Rx Test)</SD>
+                    <SD T="2018-11-23T12:51:51Z" GID="TimeDelay">500</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x22</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x62</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0xf1</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>ReadDataById Test (+ Diag TP Rx Test)</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xf1</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x90</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x90</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x01</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x02</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x04</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x05</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x06</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x07</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x08</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x09</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x0a</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x0b</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x0c</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x0d</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x0e</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x0f</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x10</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x11</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="2e393263-d0cf-414e-a490-b40a3f70beab">
+              <SHORT-NAME>Diag_TestSeq4</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:51:55Z" GID="TimeDelay">500</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x2e</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0xf1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x90</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x57</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x1</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x2</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x3</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x4</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x5</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x6</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x7</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x8</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x9</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xa</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xb</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xc</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xd</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xe</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0xf</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x10</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x6e</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>WriteDataById Test (+ Diag TP Tx Test)</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="f7fdad9d-db42-42ac-a1ab-d7c61fbd2117">
+              <SHORT-NAME>Diag_TestSeq5</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:51:58Z" GID="TimeDelay">500</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x10</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x50</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x03</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>To Check change session based on input(0x03, Extended Sesstion)</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="f27af7bb-30d1-40ab-9941-af2c3296b84f">
+              <SHORT-NAME>Diag_TestSeq6</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                    <SD T="2018-11-23T12:25:39Z" GID="SeviceId">0</SD>
+                    <SD T="2018-11-23T12:25:39Z" GID="TimeDelay">0</SD>
+                    <SD T="2018-11-23T12:25:39Z" GID="FunctionalId">1</SD>
+                    <SD T="2018-11-23T12:25:39Z" GID="Sub_FunctionAvail">1</SD>
+                    <SD T="2018-11-23T12:25:39Z" GID="SubFunction">0</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:25:48Z" GID="SeviceId">0x27</SD>
+                    <SD T="2018-11-23T12:52:01Z" GID="TimeDelay">500</SD>
+                    <SD T="2018-11-23T12:26:00Z" GID="FunctionalId">0</SD>
+                    <SD T="2018-11-23T12:26:07Z" GID="SubFunction">0x01</SD>
+                    <SD T="2018-11-23T12:26:42Z" GID="ExpectedResult">0x67,0x01</SD>
+                    <SD T="2018-11-23T12:29:21Z" GID="TestInformation">Security Access Test : Request seed key of Security Level 1</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x27</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0x01</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x67</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x01</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>Security Access Test : Request seed key of Security Level 1</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="dd5b919f-18bf-4c4e-bf72-beec5728eba6">
+              <SHORT-NAME>Diag_TestSeq7</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                    <SD T="2018-11-23T12:25:42Z" GID="SeviceId">0</SD>
+                    <SD T="2018-11-23T12:25:42Z" GID="TimeDelay">0</SD>
+                    <SD T="2018-11-23T12:25:42Z" GID="FunctionalId">1</SD>
+                    <SD T="2018-11-23T12:25:42Z" GID="Sub_FunctionAvail">1</SD>
+                    <SD T="2018-11-23T12:25:42Z" GID="SubFunction">0</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:25:52Z" GID="SeviceId">0x27</SD>
+                    <SD T="2018-11-23T12:52:05Z" GID="TimeDelay">500</SD>
+                    <SD T="2018-11-23T12:26:03Z" GID="FunctionalId">0</SD>
+                    <SD T="2018-11-23T12:26:12Z" GID="SubFunction">0x02</SD>
+                    <SD T="2018-11-23T12:26:58Z" GID="ExpectedResult">0x67,0x02</SD>
+                    <SD T="2018-11-23T12:28:10Z" GID="data">0x05,0x06,0x07,0x08</SD>
+                    <SD T="2018-11-23T12:29:44Z" GID="TestInformation">Security Access Test : Send the generated key of Security Level 1</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SeviceId</DEFINITION-REF>
+                  <VALUE>0x27</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TimeDelay</DEFINITION-REF>
+                  <VALUE>500</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/FunctionalId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/Sub_FunctionAvail</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/SubFunction</DEFINITION-REF>
+                  <VALUE>0x02</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x67</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/ExpectedResult</DEFINITION-REF>
+                  <VALUE>0x02</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x05</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x06</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x07</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/data</DEFINITION-REF>
+                  <VALUE>0x08</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTRON/TestCase_Diag/Diag_TestSeq/TestInformation</DEFINITION-REF>
+                  <VALUE>Security Access Test : Send the generated key of Security Level 1</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="0aa80e24-457d-443d-8219-bcc7c3c41bac">
+              <SHORT-NAME>Diag_TestGeneral</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2018-11-23T12:33:01Z" GID="PhysicalRxId" />
+                    <SD T="2018-11-23T12:33:03Z" GID="PhysicalTxId" />
+                    <SD T="2018-11-23T12:33:06Z" GID="FunctionalTxId" />
+                    <SD T="2018-11-23T12:33:12Z" GID="Speed" />
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/TestCase_Diag/Diag_TestGeneral</DEFINITION-REF>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
